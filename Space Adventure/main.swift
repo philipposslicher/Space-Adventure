@@ -13,3 +13,5 @@ let credits = Credits()
 let adventure = SpaceAdventure()
 let menu = Menu()
 menu.start()
+
+//More function calls go here
