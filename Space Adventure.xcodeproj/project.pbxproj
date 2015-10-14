@@ -74,11 +74,19 @@
 				BF40876D1BC0DDAC00C0A86F /* main.swift */,
 				BF8504401BCBA18100268210 /* Initial Files */,
 				BF4087761BC0ED1100C0A86F /* SpaceAdventure.swift */,
-				BF85043E1BCB9FB500268210 /* PlanetarySystem.swift */,
-				BF4388BC1BCBA96300443F74 /* Planet.swift */,
+				BF74CC3E1BCE671100024EBF /* Class Info */,
 				BF4087741BC0DF9600C0A86F /* HelperFunctions.swift */,
 			);
 			path = "Space Adventure";
+			sourceTree = "<group>";
+		};
+		BF74CC3E1BCE671100024EBF /* Class Info */ = {
+			isa = PBXGroup;
+			children = (
+				BF85043E1BCB9FB500268210 /* PlanetarySystem.swift */,
+				BF4388BC1BCBA96300443F74 /* Planet.swift */,
+			);
+			name = "Class Info";
 			sourceTree = "<group>";
 		};
 		BF8504401BCBA18100268210 /* Initial Files */ = {
