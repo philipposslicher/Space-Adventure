@@ -78,7 +78,7 @@ class SpaceAdventure {
     sleep(3)
     print("Huh, Okay, I'll let you play, just don't mess ANYTHING up")
     sleep(3)
-    print("Wait, nevermind...GO AWAY")
+    print("Wait, nevermind...GO AWAY. Linus is waiting.")
     sleep(3)
     exit(0)
     }
