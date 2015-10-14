@@ -13,10 +13,11 @@ class PlanetarySystem {
     //let planets: [Planet]
     
     let name: String
+    var planets: [Planet]
     
-    init(name: String) {
+    init(name: String, planets: [Planet]) {
         self.name = name
-        
+        self.planets = planets
     }
     
     
