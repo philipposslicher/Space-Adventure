@@ -33,10 +33,10 @@ class SpaceAdventure {
         
 
         private func displayIntroduction() {//Start displayIntroduction
-    let numberOfPlanets = 8
+
     print("Welcome to the \(planetarySystem.name)!")
     sleep(2)
-    print("There are \(numberOfPlanets) planets to explore.")
+    print("There are \(planetarySystem.planets.count) planet(s) to explore.")
     sleep(2)
     print("You are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
         }//End displayIntroduction
