@@ -14,7 +14,19 @@ class SpaceAdventure {
     
     init() {
         let mercury = Planet(name: "Mercury", description: "A hot planet, very close to the sun.")
+
+        
+        let venus = Planet(name: "Venus", description: "Clouds Clouds everywhere.")
+
+        
         planetarySystem.planets.append(mercury)
+        planetarySystem.planets.append(venus)
+        planetarySystem.planets.append(earth)
+        planetarySystem.planets.append(mars)
+        planetarySystem.planets.append(jupiter)
+        planetarySystem.planets.append(saturn)
+        planetarySystem.planets.append(uranus)
+        planetarySystem.planets.append(neptune)
         
     }
     
