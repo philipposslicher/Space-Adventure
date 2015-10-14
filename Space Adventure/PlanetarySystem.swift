@@ -20,5 +20,4 @@ class PlanetarySystem {
         self.planets = planets
     }
     
-    
 }

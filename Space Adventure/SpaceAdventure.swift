@@ -10,7 +10,13 @@ import Foundation
 
 class SpaceAdventure {
     
-    let planetarySystem = PlanetarySystem(name: "Solar System")
+    let planetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
+    
+    init() {
+        let mercury = Planet(name: "Mercury", description: "A hot planet, very close to the sun.")
+        planetarySystem.planets.append(mercury)
+        
+    }
     
     func start() {
     
