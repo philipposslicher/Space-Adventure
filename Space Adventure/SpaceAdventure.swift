@@ -88,8 +88,23 @@ class SpaceAdventure {
     //TODO: make repeatable
     exit(0)
     }
-    print("Nice to meet you, \(name). My name is AMD, mortal enemy of Intel")
     
+            
+            
+            ;if name == "upupdowndownleftrighba" {
+                print("")
+                print("")
+                print("Congratulations, you've found an Easter egg.")
+                sleep(2)
+                print("Plot twist..")
+                sleep(1)
+                print("There is none.")
+                sleep(1)
+                exit(1337)
+            }
+            
+    
+    print("Nice to meet you, \(name). My name is AMD, mortal enemy of Intel")
         }//End greetAdventurer
         
 
