@@ -48,7 +48,7 @@ class SpaceAdventure {
     determineDestination()
     }
     
-    let diameterOfEarth = 24859.82 // In miles, from pole to pole.
+    //let diameterOfEarth = 24859.82 // In miles, from pole to pole.
     
         
 
@@ -58,7 +58,7 @@ class SpaceAdventure {
     sleep(2)
     print("There are \(planetarySystem.planets.count) planet(s) to explore.")
     sleep(2)
-    print("You are currently on Earth, which has a circumference of \(diameterOfEarth) miles.")
+    print("You are currently on a spaceship, travelling at 1337 km/h")
         }//End displayIntroduction
         
         private func responseToPrompt(prompt: String) -> String {
@@ -120,13 +120,9 @@ class SpaceAdventure {
     let upperBound = planetarySystem.planets.count
     let index = Int(arc4random_uniform(UInt32(upperBound)))
     visit(planetarySystem.planets[index].name)
-    }; if randPlanet == "N" {
-    let planetName = responseToPrompt("Ok, type the desired planet")
-        print("Options:")
-        print("")
-        print("All planets of our Solar System + Planet Jiho")
+    }else if randPlanet == "N" {
+    let planetName = responseToPrompt("Ok, type the desired planet (All planets in our solar system + Planet Jiho)")
         visit(planetName)
-    //TODO: Planet Select
     } else {
     print("Sorry, I didn't get that")
         print("")
