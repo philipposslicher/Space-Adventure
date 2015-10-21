@@ -120,7 +120,7 @@ class SpaceAdventure {
     print("Ok, traveling to...")
     //TODO: Random planet select
     }; if randPlanet == "N" {
-    print("Ok, type the planet you want to visit:")
+    let planetName = responseToPrompt("Ok, type the desired planet")
     //TODO: Planet Select
     } else {
     print("Sorry, I didn't get that")
@@ -128,7 +128,20 @@ class SpaceAdventure {
         sleep(1)
     }
     }
+            
+            
+            private func visit(planettName: String) {
+                print
+                
+            }
+            
+            
+            
+            
+            
         }
 
+    
+    
     
 }
