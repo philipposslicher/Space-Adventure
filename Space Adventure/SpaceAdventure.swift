@@ -101,6 +101,19 @@ class SpaceAdventure {
                 print("There is none.")
                 sleep(1)
                 exit(1337)
+            }; if name == "harule" {
+                print("Congratulations, you've found an Easter egg.")
+                sleep(2)
+                print("Plot twist...")
+                sleep(1)
+                print("There is one")
+                sleep(1)
+                print("Or is there?")
+                sleep(1)
+                print("naaah. jk")
+                sleep(1)
+                print("∆∆∆∆∆∆∆∆∆")
+                exit(1337)
             }
             
     
