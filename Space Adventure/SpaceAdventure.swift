@@ -136,7 +136,7 @@ class SpaceAdventure {
         
     }
     }
-}
+
 
 
             
@@ -153,7 +153,7 @@ class SpaceAdventure {
 
 
             
-            
+}
             
             
 
