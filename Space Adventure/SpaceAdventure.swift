@@ -117,31 +117,48 @@ class SpaceAdventure {
     while !(randPlanet == "Y" || randPlanet == "N") {
     randPlanet = responseToPrompt("Would you like me to pick a planet for you? Y or N:")
     if randPlanet == "Y" {
-    print("Ok, traveling to...")
-    //TODO: Random planet select
+    let upperBound = planetarySystem.planets.count
+    let index = Int(arc4random_uniform(UInt32(upperBound)))
+    visit(planetarySystem.planets[index].name)
     }; if randPlanet == "N" {
     let planetName = responseToPrompt("Ok, type the desired planet")
+        print("Options:")
+        print("")
+        print("All planets of our Solar System + Planet Jiho")
+        visit(planetName)
     //TODO: Planet Select
     } else {
     print("Sorry, I didn't get that")
         print("")
         sleep(1)
     }
+        
+        
     }
+    }
+}
+
+
             
-            
-            private func visit(planettName: String) {
-                print
+            private func visit(planetName: String) {
+                print("Travelling to \(planetName)...")
+                for planet in planetarySystem.planets {
+                    if planetName == planet.name {
+                        sleep(1)
+                        print("Arrived at \(planet.name). \(planet.description)")
+                    }
+                }
                 
             }
+
+
             
             
             
             
-            
-        }
+
 
     
     
     
-}
+
