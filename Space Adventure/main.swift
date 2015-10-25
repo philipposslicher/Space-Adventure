@@ -23,9 +23,12 @@ let planetData = [
     "Planet Jiho": "This planet is home to the native jiho's"
 ]
 
+var planets = map(planetData) { name, description in Planet(name: name, description: description) }
+
+let solarSystem = PlanetarySystem(name: systemName, planets: planets)
 
 let credits = Credits()
-let adventure = SpaceAdventure()
+let adventure = SpaceAdventure(planetarySystem: solarSystem)
 let menu = Menu()
 menu.start()
 
