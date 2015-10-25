@@ -34,7 +34,6 @@
 		BF4087741BC0DF9600C0A86F /* HelperFunctions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HelperFunctions.swift; sourceTree = "<group>"; };
 		BF4087761BC0ED1100C0A86F /* SpaceAdventure.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpaceAdventure.swift; sourceTree = "<group>"; };
 		BF4388BC1BCBA96300443F74 /* Planet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Planet.swift; sourceTree = "<group>"; };
-		BF74CC791BCE769400024EBF /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
 		BF85043C1BCB9B6A00268210 /* menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menu.swift; sourceTree = "<group>"; };
 		BF85043E1BCB9FB500268210 /* PlanetarySystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlanetarySystem.swift; sourceTree = "<group>"; };
 		BFE4CF9C1BC3D78B00FD3AF1 /* Space Adventure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Space Adventure"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -77,7 +76,6 @@
 				BF4087761BC0ED1100C0A86F /* SpaceAdventure.swift */,
 				BF74CC3E1BCE671100024EBF /* Class Info */,
 				BF4087741BC0DF9600C0A86F /* HelperFunctions.swift */,
-				BF74CC791BCE769400024EBF /* music.mp3 */,
 			);
 			path = "Space Adventure";
 			sourceTree = "<group>";
