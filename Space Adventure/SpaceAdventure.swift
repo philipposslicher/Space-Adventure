@@ -10,37 +10,12 @@ import Foundation
 
 class SpaceAdventure {
     
-    let planetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
-    
-    //init() {
-        //TODO: Reduce Repetition
-        /*
-        let mercury = Planet(name: "Mercury", description: "A hot planet, very close to the sun.")
-        let venus = Planet(name: "Venus", description: "Clouds Clouds everywhere.")
-        let earth = Planet(name: "Earth", description: "Hmmm...I think I know this one...wait, nope I don't.")
-        let mars = Planet(name: "Mars", description: "Red, Red, Red, Red, oh look, more red.")
-        let jupiter = Planet(name: "Jupiter", description: "A red spot.")
-        let saturn = Planet(name: "Saturn", description: "Rings Rings Everywhere.")
-        let uranus = Planet(name: "Uranus", description: "Rotates on it's side.")
-        let neptune = Planet(name: "Neptune", description: "Cold planet, far away, enough info.")
-        let jiho = Planet(name: "Planet Jiho", description: "This planet is home to the native jiho's")
-        
-
-        
-        planetarySystem.planets.append(mercury)
-        planetarySystem.planets.append(venus)
-        planetarySystem.planets.append(earth)
-        planetarySystem.planets.append(mars)
-        planetarySystem.planets.append(jupiter)
-        planetarySystem.planets.append(saturn)
-        planetarySystem.planets.append(uranus)
-        planetarySystem.planets.append(neptune)
-        planetarySystem.planets.append(jiho)
-        */
-    //}
+    let planetarySystem: PlanetarySystem
+    init(planetarySystem: PlanetarySystem) {
+        self.planetarySystem = planetarySystem
+    }
     
     func start() {
-    
     displayIntroduction()
     greetAdventurer()
         sleep(2)
@@ -171,7 +146,8 @@ class SpaceAdventure {
 
             
 }
-            
+
+
             
 
 
