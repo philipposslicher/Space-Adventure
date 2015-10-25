@@ -9,7 +9,6 @@
 import Foundation
 import AVFoundation
 
-
 let systemName = "Solar System"
 let planetData = [
     "Mercury": "A hot planet, very close to the sun.",
@@ -22,9 +21,7 @@ let planetData = [
     "Neptune": "Cold planet, far away, enough info.",
     "Planet Jiho": "This planet is home to the native jiho's"
 ]
-
-var planets = map(planetData) { name, description in Planet(name: name, description: description) }
-
+var planets = planetData.map( { name, description in Planet(name: name, description: description) })
 let solarSystem = PlanetarySystem(name: systemName, planets: planets)
 
 let credits = Credits()
