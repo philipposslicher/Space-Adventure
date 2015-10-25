@@ -12,7 +12,7 @@ class SpaceAdventure {
     
     let planetarySystem = PlanetarySystem(name: "Solar System", planets: [Planet]())
     
-    init() {
+    //init() {
         //TODO: Reduce Repetition
         /*
         let mercury = Planet(name: "Mercury", description: "A hot planet, very close to the sun.")
@@ -37,7 +37,7 @@ class SpaceAdventure {
         planetarySystem.planets.append(neptune)
         planetarySystem.planets.append(jiho)
         */
-    }
+    //}
     
     func start() {
     
