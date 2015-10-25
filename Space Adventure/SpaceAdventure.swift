@@ -130,9 +130,13 @@ class SpaceAdventure {
     while !(randPlanet == "Y" || randPlanet == "N") {
     randPlanet = responseToPrompt("Would you like me to pick a planet for you? Y or N:")
     if randPlanet == "Y" {
-    let upperBound = planetarySystem.planets.count
-    let index = Int(arc4random_uniform(UInt32(upperBound)))
-    visit(planetarySystem.planets[index].name)
+
+        if let planet = planetarySystem.randomPlanet {
+            visit(planet.name)
+        } else {
+            print("Uhm.....Someone blew up the solay system.")
+        }
+        
     }else if randPlanet == "N" {
     let planetName = responseToPrompt("Ok, type the desired planet (All planets in our solar system + Planet Jiho)")
         visit(planetName)
