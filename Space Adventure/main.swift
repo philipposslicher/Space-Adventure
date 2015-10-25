@@ -9,6 +9,21 @@
 import Foundation
 import AVFoundation
 
+
+let systemName = "Solar System"
+let planetData = [
+    "Mercury": "A hot planet, very close to the sun.",
+    "Venus": "Clouds Clouds everywhere.",
+    "Earth": "Hmmm...I think I know this one...wait, nope I don't.",
+    "Mars": "Red, Red, Red, Red, oh look, more red.",
+    "Jupiter": "A red spot.",
+    "Saturn": "Rings Rings Everywhere.",
+    "Uranus": "Rotates on it's side.",
+    "Neptune": "Cold planet, far away, enough info.",
+    "Planet Jiho": "This planet is home to the native jiho's"
+]
+
+
 let credits = Credits()
 let adventure = SpaceAdventure()
 let menu = Menu()

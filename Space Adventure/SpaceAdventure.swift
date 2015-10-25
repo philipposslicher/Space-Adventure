@@ -14,6 +14,7 @@ class SpaceAdventure {
     
     init() {
         //TODO: Reduce Repetition
+        /*
         let mercury = Planet(name: "Mercury", description: "A hot planet, very close to the sun.")
         let venus = Planet(name: "Venus", description: "Clouds Clouds everywhere.")
         let earth = Planet(name: "Earth", description: "Hmmm...I think I know this one...wait, nope I don't.")
@@ -35,7 +36,7 @@ class SpaceAdventure {
         planetarySystem.planets.append(uranus)
         planetarySystem.planets.append(neptune)
         planetarySystem.planets.append(jiho)
-        
+        */
     }
     
     func start() {
@@ -134,7 +135,9 @@ class SpaceAdventure {
         if let planet = planetarySystem.randomPlanet {
             visit(planet.name)
         } else {
-            print("Uhm.....Someone blew up the solay system.")
+            print("Uhm.....")
+            sleep(2)
+            print("Someone blew up the solar system.")
         }
         
     }else if randPlanet == "N" {
