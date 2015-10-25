@@ -22,7 +22,7 @@ class SpaceAdventure {
         let saturn = Planet(name: "Saturn", description: "Rings Rings Everywhere.")
         let uranus = Planet(name: "Uranus", description: "Rotates on it's side.")
         let neptune = Planet(name: "Neptune", description: "Cold planet, far away, enough info.")
-        let jiho = Planet(name: "Jiho", description: "This planet is home to the native jiho's")
+        let jiho = Planet(name: "Planet Jiho", description: "This planet is home to the native jiho's")
         
 
         
@@ -151,6 +151,7 @@ class SpaceAdventure {
             
             private func visit(planetName: String) {
                 print("Travelling to \(planetName)...")
+                sleep(1)
                 for planet in planetarySystem.planets {
                     if planetName == planet.name {
                         sleep(1)
