@@ -31,9 +31,7 @@ class Credits {
             print("")
             option = getln()
             if option == "1" {
-                sleep(1)
                 print("-----")
-                print("")
                 menu.start()
                 exit(1)
             } ;if option == "2" {

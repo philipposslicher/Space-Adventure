@@ -20,6 +20,7 @@ class SpaceAdventure {
     greetAdventurer()
         sleep(2)
         print("Let's go on an adventure, to save AMD")
+        print("-------------------------------------")
         sleep(2)
     determineDestination()
     }
@@ -27,8 +28,9 @@ class SpaceAdventure {
         private func displayIntroduction() {//Start displayIntroduction
 
     print("Welcome to the \(planetarySystem.name)!")
+    print("")
     sleep(2)
-    print("There are \(planetarySystem.planets.count) planet(s) to explore.")
+    print("Today's Planet Count: \(planetarySystem.planets.count)")
     sleep(2)
     print("You are currently on a spaceship, travelling at 1337 km/h")
     sleep(2)
@@ -93,7 +95,6 @@ class SpaceAdventure {
     
     print("Nice to meet you, \(name). My name is AMD, mortal enemy of Intel")
     sleep(2)
-    print("----------------------------------------------------------------")
         }//End greetAdventurer
         
 
@@ -150,7 +151,7 @@ class SpaceAdventure {
             }
 
     private func loop() {//start
-        print("Well that was fun....you wan't to go again")
+        print("Well that was fun....you wan't to go again?")
     }//end
             
 }
