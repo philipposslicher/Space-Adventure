@@ -31,6 +31,8 @@ class SpaceAdventure {
     print("There are \(planetarySystem.planets.count) planet(s) to explore.")
     sleep(2)
     print("You are currently on a spaceship, travelling at 1337 km/h")
+    sleep(2)
+    print("---------------------------------------------------------")
         }//End displayIntroduction
         
         private func responseToPrompt(prompt: String) -> String {
@@ -39,7 +41,7 @@ class SpaceAdventure {
         }
 
         private func greetAdventurer() {//Start greetAdventurer
-    sleep(3)
+    sleep(1)
 
 
 
@@ -90,6 +92,8 @@ class SpaceAdventure {
             
     
     print("Nice to meet you, \(name). My name is AMD, mortal enemy of Intel")
+    sleep(2)
+    print("----------------------------------------------------------------")
         }//End greetAdventurer
         
 

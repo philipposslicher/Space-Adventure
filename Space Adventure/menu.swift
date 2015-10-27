@@ -39,14 +39,15 @@ class Menu {
             print("")
             option = getln()
             if option == "1" {
-                print("")
+                print("----------------------------")
                 adventure.start()
                 exit(1)
             } ;if option == "2" {
-                print("")
+                print("--------")
                 credits.start()
                 exit(2)
             }; if option == "3" {
+                print("-----")
                 exit(3)
             } else {
                 print("Sorry, I didn't get that")

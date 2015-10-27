@@ -13,11 +13,10 @@ class Credits {
     func start(){
         print("Credits:")
         print("")
-        print("")
         sleep(1)
         print("Space Adventure is a game developed by Philippos Slicher in App Design class. It is a super simple game which is way too simple, but thats the purpose...")
         sleep(1)
-        sleep(1)
+        sleep(3)
         print("")
 
         
@@ -33,6 +32,7 @@ class Credits {
             option = getln()
             if option == "1" {
                 sleep(1)
+                print("-----")
                 print("")
                 menu.start()
                 exit(1)
