@@ -140,11 +140,11 @@ class SpaceAdventure {
                     if planetName == planet.name {
                         sleep(1)
                         print("Arrived at \(planet.name).")
-                        sleep(2)
+                        sleep(3)
                         print("")
                         print("\(planet.name): \(planet.description)")
                         print("")
-                        sleep(2)
+                        sleep(3)
                         loop()
                     }
                 }
@@ -152,12 +152,26 @@ class SpaceAdventure {
             }
 
     private func loop() {//start
-        print("Well that was fun....you wan't to go again?")
-        responseToPrompt("Would you like me to pick a planet for you? Y or N:")
-
-    }//end
+        var loop = ""
+        while !(loop == "Y" || loop == "N") {
+            loop = responseToPrompt("Want another planet choice? Y or N")
+            if loop == "Y" {
+            print("")
+                determineDestination()
+            }else if loop == "N" {
+                
+            } else {
+                print("Sorry, I didn't get that")
+                print("")
+                sleep(1)
+            }
             
-}
+        }
+    }//end
+
+    }
+            
+
 
 
             
