@@ -133,6 +133,7 @@ class SpaceAdventure {
 
             
             private func visit(planetName: String) {
+                print("-------------------------------")
                 print("Travelling to \(planetName)...")
                 sleep(1)
                 for planet in planetarySystem.planets {
@@ -141,7 +142,7 @@ class SpaceAdventure {
                         print("Arrived at \(planet.name).")
                         sleep(2)
                         print("")
-                        print(planet.description)
+                        print("\(planet.name): \(planet.description)")
                         print("")
                         sleep(2)
                         loop()
@@ -152,6 +153,8 @@ class SpaceAdventure {
 
     private func loop() {//start
         print("Well that was fun....you wan't to go again?")
+        responseToPrompt("Would you like me to pick a planet for you? Y or N:")
+
     }//end
             
 }
