@@ -137,13 +137,21 @@ class SpaceAdventure {
                 for planet in planetarySystem.planets {
                     if planetName == planet.name {
                         sleep(1)
-                        print("Arrived at \(planet.name). \(planet.description)")
+                        print("Arrived at \(planet.name).")
+                        sleep(2)
+                        print("")
+                        print(planet.description)
+                        print("")
+                        sleep(2)
+                        loop()
                     }
                 }
                 
             }
 
-
+    private func loop() {//start
+        print("Well that was fun....you wan't to go again")
+    }//end
             
 }
 
