@@ -24,10 +24,6 @@ class SpaceAdventure {
     determineDestination()
     }
     
-    //let diameterOfEarth = 24859.82 // In miles, from pole to pole.
-    
-        
-
         private func displayIntroduction() {//Start displayIntroduction
 
     print("Welcome to the \(planetarySystem.name)!")
