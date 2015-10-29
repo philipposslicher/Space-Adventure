@@ -118,15 +118,20 @@ class SpaceAdventure {
         
     }else if randPlanet == "N" {
     let planetName = responseToPrompt("Ok, type the desired planet (All planets in our solar system + Planet Jiho)")
-        for planet in planetarySystem.planets {
-        if planetName == planet.name {
-        visit(planetName)
-        } else {
-            print("This Planet does not exist")
-            sleep(1)
-            loop()
+    let temp = planetName
+        for planets in planetarySystem.planets {//
+            if temp == planets.name {
+                visit(temp)
+            }; if temp != planets.name {
+            } else {
+                print("This planet doesn't exist")
+                sleep(1)
+                print("")
+                determineDestination()
             }
-        }
+        }//
+        
+        
     } else {
     print("Sorry, I didn't get that")
         print("")
