@@ -118,7 +118,15 @@ class SpaceAdventure {
         
     }else if randPlanet == "N" {
     let planetName = responseToPrompt("Ok, type the desired planet (All planets in our solar system + Planet Jiho)")
+        for planet in planetarySystem.planets {
+        if planetName == planet.name {
         visit(planetName)
+        } else {
+            print("This Planet does not exist")
+            sleep(1)
+            loop()
+            }
+        }
     } else {
     print("Sorry, I didn't get that")
         print("")
@@ -130,7 +138,7 @@ class SpaceAdventure {
     }
 
 
-
+ 
             
             private func visit(planetName: String) {
                 print("-------------------------------")
@@ -159,7 +167,7 @@ class SpaceAdventure {
             print("")
                 determineDestination()
             }else if loop == "N" {
-                
+                exit(2)
             } else {
                 print("Sorry, I didn't get that")
                 print("")
