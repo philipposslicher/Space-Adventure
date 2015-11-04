@@ -172,6 +172,7 @@ class SpaceAdventure {
             print("")
                 determineDestination()
             }else if loop == "N" {
+                print("Thank you for playing")
                 exit(2)
             } else {
                 print("Sorry, I didn't get that")
